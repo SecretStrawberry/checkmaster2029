@@ -1,0 +1,28 @@
+.btn {
+  // resets
+  border: none;
+  outline: none;
+
+  text-transform: uppercase;
+
+  padding: 1rem 2rem;
+
+  transition: all 0.2s;
+  font-family: "Lato", sans-serif;
+
+  &:hover {
+    background-color: $color-primary;
+    transform: translateY(-3px);
+    @include shadowDark;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+
+  @include borderRadius;
+  &--login {
+    margin-top: 3rem;
+    background-color: $color-primary;
+    color: $color-quaternary;
+  }
+}

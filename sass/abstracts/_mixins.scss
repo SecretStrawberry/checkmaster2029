@@ -1,0 +1,11 @@
+@mixin borderRadius {
+  border-radius: 2px;
+}
+
+@mixin shadowLight {
+  box-shadow: 0 0.3rem 0.5rem rgba($color-quaternary, 0.4);
+}
+
+@mixin shadowDark {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+}

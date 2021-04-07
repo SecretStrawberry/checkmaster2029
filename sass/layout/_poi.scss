@@ -1,0 +1,20 @@
+.content-poi {
+  display: grid;
+  grid-template-columns: minmax(min-content, 100%);
+
+  width: 90%;
+  margin: 5rem auto;
+
+  background-color: $color-tertiary;
+
+  row-gap: 2rem;
+
+  &__location {
+    &--guid {
+      background-color: $color-secondary;
+      color: $color-quaternary;
+      font-size: 2rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}

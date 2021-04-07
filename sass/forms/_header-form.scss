@@ -1,0 +1,28 @@
+.start {
+  form {
+    padding: 2rem 4rem;
+    @include borderRadius;
+    @include shadowLight;
+    label {
+      align-self: flex-start;
+      margin-bottom: 0.5rem;
+      font-size: 1.7rem;
+    }
+
+    input {
+      //reset
+      padding: 1rem 2rem;
+      outline: none;
+      border: none;
+
+      width: 100%;
+      margin-bottom: 2rem;
+      border-radius: inherit;
+
+      color: $color-quaternary;
+      background-color: $color-primary;
+
+      font-size: 2rem;
+    }
+  }
+}

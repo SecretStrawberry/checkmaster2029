@@ -1,0 +1,9 @@
+.groups-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, 100%));
+
+  width: 90%;
+  margin: 5rem auto;
+
+  gap: 2rem;
+}

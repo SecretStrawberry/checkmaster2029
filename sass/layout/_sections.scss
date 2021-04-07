@@ -1,0 +1,54 @@
+//////////////////////////////////////////////////////////
+// HOME PAGE / LOG IN SECTION
+/////////////////////////////////////////////////////////
+.section {
+  display: grid;
+  grid-template-rows: repeat(6, minmax(min-content, 100%));
+  grid-template-columns:
+    repeat(2, minmax(min-content, 100%)) repeat(2, minmax(max-content, 100%))
+    repeat(2, minmax(min-content, 100%));
+  height: 100vh;
+
+  padding: 2rem 4rem;
+
+  align-items: center;
+  justify-items: center;
+
+  background-color: $color-primary;
+  border: 2rem solid $color-quaternary;
+
+  .start__login {
+    grid-row: 3 / 5;
+    grid-column: 3 / 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 80%;
+
+    background-color: $color-tertiary;
+    color: $color-primary;
+  }
+}
+
+//////////////////////////////////////////////////////////
+// POINTS OF INTEREST LOCATION
+/////////////////////////////////////////////////////////
+
+.header {
+  &__poi {
+    height: 50%;
+    width: 90%;
+    margin: 1rem auto;
+    &__heading {
+      align-self: center;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////
+// INTEREST GROUPS
+/////////////////////////////////////////////////////////

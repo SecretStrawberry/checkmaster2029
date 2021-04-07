@@ -1,0 +1,40 @@
+.section {
+  &__nav {
+    display: flex;
+    background-color: $color-secondary;
+    width: 70%;
+    height: 50%;
+    align-self: flex-end;
+    @include borderRadius;
+    padding: 1rem 2rem;
+    a {
+      display: inline-block;
+      padding: 2rem 3rem;
+      @include borderRadius;
+      background-color: $color-tertiary;
+      &:link,
+      &:visited {
+        text-decoration: none;
+        font-size: 2rem;
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////
+// LIST LINKS IN LOCATIONS AND GROUPS
+
+.list-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    ul {
+      background-color: $color-tertiary;
+      transition: all 0.2s;
+    }
+  }
+}
