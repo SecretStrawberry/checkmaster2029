@@ -54,10 +54,17 @@
         border: 1px solid $color-tertiary;
         margin: 1rem;
         text-align: center;
+
         p {
           color: $color-secondary;
         }
       }
     }
   }
+}
+
+.equipments__item__btn {
+  margin-top: 3rem;
+  grid-column: 2 / 3;
+  justify-self: end;
 }

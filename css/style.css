@@ -59,6 +59,10 @@ form {
     background-color: #f7f7f7;
     color: #323643; }
 
+.equipments__item__btn {
+  padding: 1rem 2rem;
+  width: 15rem; }
+
 .section__nav {
   display: flex;
   background-color: #93deff;
@@ -137,6 +141,11 @@ form {
         text-align: center; }
         .equipments__item__parameters .parameter p {
           color: #93deff; }
+
+.equipments__item__btn {
+  margin-top: 3rem;
+  grid-column: 2 / 3;
+  justify-self: end; }
 
 .header {
   grid-row: 1 / 2;
