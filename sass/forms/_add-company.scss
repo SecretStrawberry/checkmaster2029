@@ -1,0 +1,48 @@
+.new-company {
+  background-color: $color-tertiary;
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 4rem 8rem;
+
+  color: $color-primary;
+  font-size: 2rem;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    padding: 1rem 2rem;
+
+    font-size: 2rem;
+    color: $color-quaternary;
+  }
+
+  &__fields-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 87%;
+    margin-left: 6.5%;
+
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+
+    border-top: 1px solid $color-primary;
+  }
+
+  &__field-container {
+    display: flex;
+    flex-direction: column;
+    &--contact {
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__form-btn {
+    margin-left: 77%;
+  }
+}

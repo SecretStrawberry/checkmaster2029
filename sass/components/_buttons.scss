@@ -31,3 +31,15 @@
   padding: 1rem 2rem;
   width: 15rem;
 }
+
+////////////////////////////////////////////
+// FORM BUTTON
+////////////////////////////////////////
+
+.new-company {
+  &__form-btn {
+    font-family: inherit;
+    color: $color-quaternary;
+    padding: 1rem 2rem;
+  }
+}

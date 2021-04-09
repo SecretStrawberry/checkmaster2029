@@ -40,6 +40,37 @@ form {
     background-color: #f7f7f7;
     font-size: 2rem; }
 
+.new-company {
+  background-color: #606470;
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 8rem;
+  color: #f7f7f7;
+  font-size: 2rem; }
+  .new-company h2 {
+    margin-bottom: 2rem; }
+  .new-company__input {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #323643; }
+  .new-company__fields-container {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    margin-left: 6.5%;
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+    border-top: 1px solid #f7f7f7; }
+  .new-company__field-container {
+    display: flex;
+    flex-direction: column; }
+    .new-company__field-container--contact {
+      width: 80%;
+      margin-left: 10%;
+      margin-bottom: 2rem; }
+  .new-company__form-btn {
+    margin-left: 77%; }
+
 .btn {
   border: none;
   outline: none;
@@ -62,6 +93,11 @@ form {
 .equipments__item__btn {
   padding: 1rem 2rem;
   width: 15rem; }
+
+.new-company__form-btn {
+  font-family: inherit;
+  color: #323643;
+  padding: 1rem 2rem; }
 
 .section__nav {
   display: flex;
@@ -101,6 +137,29 @@ form {
     width: 100%;
     padding: 1rem 2rem;
     text-align: center; }
+
+.navigation-admin {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #323643; }
+  .navigation-admin__search-bar {
+    padding: 1rem 2rem;
+    font-size: 2rem; }
+  .navigation-admin ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem 2rem; }
+  .navigation-admin__link {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: #606470;
+    border-radius: 2px; }
+    .navigation-admin__link:link, .navigation-admin__link:visited {
+      text-decoration: none;
+      color: #93deff; }
 
 .equipments {
   display: grid;
