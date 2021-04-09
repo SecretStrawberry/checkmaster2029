@@ -35,294 +35,111 @@
           <div class="equipments__item__parameters__container">
             <div class="parameter">
               <p>Presiune tur</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-
-            <div class="parameter">
-              <p>Conditie generala buna DA/NU</p>
-              <input
-                type="checkbox"
-                name="yes"
-                id="presure-firepomp-1-yes"
-                required
-                value="da"
-              />
-              <label for="yes">DA</label>
-              <input
-                type="checkbox"
-                name="no"
-                id="presure-firepomp-1-no"
-                required
-                value="nu"
-              />
-              <label for="yes">NU</label>
+              <div class="parameter__um">
+                <input
+                  type="text"
+                  name="presure"
+                  class="parameter__input"
+                  id="presure-firepomp-1"
+                  required
+                />
+                <label for="presure-firepomp-1">Bari</label>
+              </div>
             </div>
             <div class="parameter">
               <p>Presiune retur</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
+              <div class="parameter__um">
+                <input
+                  type="text"
+                  name="presure"
+                  class="parameter__input"
+                  id="presure-firepomp-2"
+                  required
+                />
+                <label for="presure-firepomp-2">Bari</label>
+              </div>
             </div>
-            <div class="parameter">
-              <p>Culoare</p>
 
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
+            <div class="parameter">
+              <p>Conditie estetica</p>
+              <div class="parameter__checkbox">
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__good"
+                    required
+                  />
+                  <label for="condition__good">Buna</label>
+                </div>
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__bad"
+                    required
+                  />
+                  <label for="condition__bad">Rea</label>
+                </div>
+              </div>
             </div>
-            <div class="parameter">
-              <p>Presiune supape</p>
 
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
+            <div class="parameter parameter--aesthetics">
+              <p>Nivel galagie</p>
+              <div class="parameter__checkbox">
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__good"
+                    required
+                  />
+                  <label for="condition__good">Buna</label>
+                </div>
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__bad"
+                    required
+                  />
+                  <label for="condition__bad">Rea</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="parameter parameter--check-only">
+              <p>Am verificat imprejurul pompei nu sunt obstacole</p>
+              <div class="parameter__checkbox">
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__good"
+                    required
+                  />
+                  <label for="condition__good">Verificat</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
         <button class="equipments__item__btn">OK</button>
-      </div>
-      <!--test ITEM /////////////////////////////////////////////////////////////////////////////////////////////-->
-      <div class="equipments__item">
-        <div class="equipments__item__name"><h2>Pompa Incediu nr. 2</h2></div>
-        <div class="equipments__item__description">
-          <p>Pompa secundara de incediu pt stingerf cu spuma</p>
+        <div class="equipments__photo">
+          <p>Adaugati o poza daca este necesar</p>
+          <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename" />
+
+            <button type="submit">Incarca poza</button>
+          </form>
         </div>
-
-        <div class="equipments__item__parameters">
-          <h1 class="parameters__heading">Parametrii</h1>
-          <div class="equipments__item__parameters__container">
-            <div class="parameter">
-              <p>Presiune tur</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-
-            <div class="parameter">
-              <p>Conditie generala buna DA/NU</p>
-              <input
-                type="checkbox"
-                name="yes"
-                id="presure-firepomp-1-yes"
-                required
-                value="da"
-              />
-              <label for="yes">DA</label>
-              <input
-                type="checkbox"
-                name="no"
-                id="presure-firepomp-1-no"
-                required
-                value="nu"
-              />
-              <label for="yes">NU</label>
-            </div>
-            <div class="parameter">
-              <p>Presiune retur</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Culoare</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Presiune supape</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Marime</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <!-- test html -->
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Conditie generala buna DA/NU</p>
-              <input
-                type="checkbox"
-                name="yes"
-                id="presure-firepomp-1-yes"
-                required
-                value="da"
-              />
-              <label for="yes">DA</label>
-              <input
-                type="checkbox"
-                name="no"
-                id="presure-firepomp-1-no"
-                required
-                value="nu"
-              />
-              <label for="yes">NU</label>
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <div class="parameter">
-              <p>Pret</p>
-
-              <input
-                type="text"
-                name="presure"
-                id="presure-firepomp-1"
-                required
-              />
-            </div>
-            <!-- test html -->
-          </div>
-        </div>
-        <button class="equipments__item__btn">OK</button>
       </div>
-      <!-- test item ///////////////////////////////////////-->
     </section>
   </body>
 </html>
