@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/JS/admin.js"></script>
     <title>Admin</title>
   </head>
   <body>
@@ -25,7 +26,11 @@
     </header>
     <nav class="navigation-admin">
       <ul>
-        <li><a class="navigation-admin__link" href="#">Adauga Companie</a></li>
+        <li>
+          <button class="navigation-admin__btn js-button-add-company">
+            Adauga Companie
+          </button>
+        </li>
         <li>
           <input
             type="text"
@@ -42,7 +47,7 @@
     </nav>
 
     <!--WE NEED TO HIDE THIS FORM TILL "Adauga companie" IS PRESSED-->
-    <form action="submit" class="new-company">
+    <form action="submit" class="new-company hidden js-new-company">
       <h2>Adauga Compania</h2>
       <div class="new-company__fields-container">
         <div class="new-company__field-container">
@@ -115,8 +120,75 @@
       </button>
     </form>
     <!--WE NEED TO HIDE THIS FORM TILL "Adauga companie" IS PRESSED-->
-    <section class="company-list">
-      <h2>Companii</h2>
+
+    <!--Comapnies list-->
+    <section class="companies">
+      <h2>Lista companii</h2>
+      <div class="companies__company js-companies__company">
+        <ul class="companies__company__details">
+          <li><span>Companie: </span>Welness & fitness</li>
+          <li><span>Adresa: </span>Popei 45, Hargita</li>
+          <li><span>Persona contact:</span>Mihaelina Mielina</li>
+          <li><span>Tel: </span>998 998 899</li>
+          <li><span>E-mail: </span>mielina@mihaelina.fit</li>
+        </ul>
+        <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
+        <div class="companies__company__actions js-companies__company__actions">
+          <div class="companies__company__actions--modifiers">
+            <button
+              class="companies__company__btn companies__company__btn--blue"
+            >
+              Modifica
+            </button>
+            <a href="/pages/add-poi.html">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Adauga cladire
+              </button>
+            </a>
+          </div>
+          <div class="companies__company__actions--danger-zone">
+            <button
+              class="companies__company__btn companies__company__btn--red"
+            >
+              Sterge compania
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--company 2-->
+      <div class="companies__company js-companies__company">
+        <ul class="companies__company__details">
+          <li><span>Companie: </span>stadion CFR</li>
+          <li><span>Adresa: </span>Jintitei 124, Hargita</li>
+          <li><span>Persona contact:</span>Crinel Petronel Papamare</li>
+          <li><span>Tel: </span>777 434 123</li>
+          <li><span>E-mail: </span>papamare@petro.cfr</li>
+        </ul>
+        <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
+        <div class="companies__company__actions js-companies__company__actions">
+          <div class="companies__company__actions--modifiers">
+            <button
+              class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
+            >
+              Modifica
+            </button>
+            <button
+              class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
+            >
+              Adauga camere
+            </button>
+          </div>
+          <div class="companies__company__actions--danger-zone">
+            <button
+              class="companies__company__btn companies__company__btn--red js-btn-company-modifiers"
+            >
+              Sterge compania
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

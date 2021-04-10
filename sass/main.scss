@@ -4,18 +4,19 @@
 @import "base/base";
 @import "base/typography";
 
+@import "forms/add-company-form";
+@import "forms/add-poi-form";
 @import "forms/header-form";
-@import "forms/add-company";
-
 
 @import "components/buttons";
 @import "components/links";
 @import "components/lists";
 @import "components/admin-nav";
 
+@import "layout/add-poi";
+@import "layout/admin-main";
 @import "layout/equipments";
 @import "layout/header";
 @import "layout/interest-groups";
 @import "layout/poi";
 @import "layout/sections";
-@import "layout/admin-main";

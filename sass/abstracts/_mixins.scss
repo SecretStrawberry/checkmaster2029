@@ -9,3 +9,7 @@
 @mixin shadowDark {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
 }
+
+@mixin borderBottom {
+  border-bottom: 1px solid $color-primary;
+}

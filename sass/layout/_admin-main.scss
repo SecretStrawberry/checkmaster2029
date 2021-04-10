@@ -1,0 +1,69 @@
+.companies {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+
+  display: grid;
+  grid-template-columns: minmax(min-content, 100%);
+  width: 80%;
+  margin: 1rem auto;
+
+  transition: all 0.5s;
+
+  h2 {
+    font-size: 3rem;
+    background-color: $color-tertiary;
+    color: $color-secondary;
+    padding: 1rem 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__company {
+    padding: 1rem 2rem;
+
+    background-color: $color-quaternary;
+    color: $color-primary;
+
+    margin-bottom: 1rem;
+    &__details {
+      display: flex;
+      justify-content: space-between;
+
+      list-style: none;
+      font-size: 2rem;
+      @include borderBottom;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        span {
+          color: $color-secondary;
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+
+      &--modifiers,
+      &--danger-zone {
+        padding: 1rem 2rem;
+      }
+
+      &--modifiers {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+      }
+    }
+  }
+}
+
+.hidden {
+  transition: all 0.5s;
+  opacity: 0;
+  transform: translateY(-9rem);
+}

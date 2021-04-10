@@ -33,7 +33,7 @@
 }
 
 ////////////////////////////////////////////
-// FORM BUTTON
+// FORM BUTTON ADD NEW COMPANY
 ////////////////////////////////////////
 
 .new-company {
@@ -41,5 +41,71 @@
     font-family: inherit;
     color: $color-quaternary;
     padding: 1rem 2rem;
+  }
+}
+
+////////////////////////////////////////////
+// ADD NEW COMPANY BUTTON FROM ADMIN NAV
+////////////////////////////////////////
+
+.navigation-admin {
+  &__btn {
+    border: none;
+    outline: none;
+
+    font-family: inherit;
+
+    width: 20rem;
+    padding: 1rem 2rem;
+    background-color: $color-secondary;
+    color: $color-quaternary;
+    @include borderRadius;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color-primary;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+////////////////////////////////////////////
+// BUTTONS FROM  MODIFING ADDED COMPANY, EDIT COMPANY, ADD EQUIPMENT AND DELETE COMPANY
+////////////////////////////////////////
+
+.companies__company {
+  &__btn {
+    border: none;
+    outline: none;
+
+    @include borderRadius;
+
+    font-family: inherit;
+    padding: 1rem 1.5rem;
+
+    cursor: pointer;
+
+    transition: all 0.2s;
+
+    &--blue {
+      background-color: $color-secondary;
+      color: $color-quaternary;
+      &:hover {
+        transform: translateY(-2px);
+        background-color: $color-primary;
+      }
+    }
+
+    &--red {
+      background-color: $color-red;
+      color: $color-primary;
+      &:hover {
+        transform: scale(1.3);
+        border: 1px solid $color-tertiary;
+      }
+    }
   }
 }
