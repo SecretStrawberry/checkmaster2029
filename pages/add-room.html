@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/JS/admin.js"></script>
+    <title>Admin | Lista Camere</title>
+  </head>
+  <body>
+    <header class="header header__poi">
+      <div class="header__poi--company-container">
+        <h2>Wellness & fitness</h2>
+        <h1 class="header__poi__heading">Complex A</h1>
+        <!-- this h2 under, should be added programaticly from DB-->
+        <nav class="mini-nav">
+          <a class="sub-menu" href="/pages/admin.html">Companii</a>
+          <a class="sub-menu" href="/pages/add-poi.html">Cladiri</a>
+        </nav>
+      </div>
+
+      <div class="header__info">
+        <p>Oferit de C&H Comapny</p>
+        <p>Contact: 744 234 345</p>
+        <p>Email: info@c&h.com</p>
+      </div>
+    </header>
+    <nav class="navigation-admin">
+      <ul>
+        <li>
+          <button class="navigation-admin__btn js-button-add-company">
+            Adauga camera
+          </button>
+        </li>
+        <li>
+          <input
+            type="text"
+            class="navigation-admin__search-bar"
+            placeholder="Cauta camera"
+          />
+          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
+          <button type="submit" class="navigation-admin__search-button">
+            Cauta
+          </button>
+          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
+        </li>
+      </ul>
+    </nav>
+
+    <form action="submit" class="new-company hidden js-new-company">
+      <h2>Adauga Camera</h2>
+      <div class="new-company__add-room-container">
+        <div class="new-company__add-room">
+          <label for="room-name">Nume camera</label>
+          <input
+            type="text"
+            name="room-name"
+            class="add-room-input"
+            id="room-name"
+            required
+          />
+        </div>
+
+        <div class="new-company__btn-container">
+          <button type="submit" class="new-company__form-btn">
+            Adauga camera
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!--Room list-->
+    <section class="companies">
+      <h2>Lista camere</h2>
+      <div class="companies__company js-companies__company">
+        <ul class="companies__company__details">
+          <li><span>Camera: </span>Pompe Incediu</li>
+        </ul>
+        <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
+        <div class="companies__company__actions js-companies__company__actions">
+          <div class="companies__company__actions--modifiers">
+            <a href="/pages/add-equipments.html">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Vezi camera
+              </button>
+            </a>
+            <button
+              class="companies__company__btn companies__company__btn--blue"
+            >
+              Modifica
+            </button>
+          </div>
+          <div class="companies__company__actions--danger-zone">
+            <button
+              class="companies__company__btn companies__company__btn--red"
+            >
+              Sterge camera
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--room 2-->
+      <div class="companies__company js-companies__company">
+        <ul class="companies__company__details">
+          <li>
+            <span>Camera: </span>Panou electric tablou pricipal intrare
+            pricipala
+          </li>
+        </ul>
+        <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
+        <div class="companies__company__actions js-companies__company__actions">
+          <div class="companies__company__actions--modifiers">
+            <a href="/pages/add-equipments.html">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Vezi camera
+              </button>
+            </a>
+            <button
+              class="companies__company__btn companies__company__btn--blue"
+            >
+              Modifica
+            </button>
+          </div>
+          <div class="companies__company__actions--danger-zone">
+            <button
+              class="companies__company__btn companies__company__btn--red"
+            >
+              Sterge camera
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.parameter {
+  &-container {
+    border: 1px solid rgba($color-primary, 0.8);
+    margin-bottom: 1.4rem;
+  }
+  &-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    width: 98%;
+    margin: 0 auto;
+
+    font-size: 2rem;
+
+    padding: 1.4rem 2.8rem;
+    border-bottom: 1px solid rgba($color-primary, 0.5);
+
+    span {
+      color: $color-secondary;
+    }
+  }
+}

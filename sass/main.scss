@@ -5,7 +5,9 @@
 @import "base/typography";
 
 @import "forms/add-company-form";
+@import "forms/add-parameter";
 @import "forms/add-poi-form";
+@import "forms/add-room";
 @import "forms/header-form";
 
 @import "components/buttons";
@@ -13,7 +15,10 @@
 @import "components/lists";
 @import "components/admin-nav";
 
+@import "layout/add-equipments";
+@import "layout/add-parameters";
 @import "layout/add-poi";
+@import "layout/add-room";
 @import "layout/admin-main";
 @import "layout/equipments";
 @import "layout/header";

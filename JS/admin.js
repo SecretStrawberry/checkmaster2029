@@ -10,7 +10,7 @@ const companies = document.querySelector(".companies");
 // ADD NEW POI BUTTON SELECTOR
 ////////////////////////////////////////
 
-const addNewPoi = document.querySelector(".js-btn-company-add-poi");
+// const addNewPoi = document.querySelector(".js-btn-company-add-poi");
 
 //////////////////////////////////////
 // HIDE THE FORM THAT ADDS NEW COMPANY
@@ -30,4 +30,4 @@ addCompanyButton.addEventListener("click", function () {
 // REDIRECT THE ADD POI BUTTON TO THE CORECT PAGE
 ////////////////////////////////////////
 
-addNewPoi.addEventListener("click", function () {});
+// addNewPoi.addEventListener("click", function () {});

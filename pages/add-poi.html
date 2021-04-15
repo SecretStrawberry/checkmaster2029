@@ -13,11 +13,20 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/JS/admin.js"></script>
-    <title>Admin | Adauga cladire</title>
+    <title>Admin</title>
   </head>
   <body>
     <header class="header header__poi">
-      <h1 class="header__poi__heading">Adauga cladire</h1>
+      <div class="separator">
+        <h2>Wellness & fitness</h2>
+        <h1 class="header__poi__heading">Lista cladiri</h1>
+        <nav class="mini-nav">
+          <a class="sub-menu" href="/pages/admin.html">Companii</a>
+          <a class="sub-menu" href="/pages/add-poi.html">Cladiri</a>
+        </nav>
+      </div>
+      <!-- this h2 under, should be added programaticly from DB-->
+
       <div class="header__info">
         <p>Oferit de C&H Comapny</p>
         <p>Contact: 744 234 345</p>
@@ -135,10 +144,84 @@
           />
         </div>
       </div>
-
-      <button type="submit" class="new-company__form-btn">
-        Adauga cladire
-      </button>
+      <div class="new-company__btn-container">
+        <button type="submit" class="new-company__form-btn">
+          Adauga cladire
+        </button>
+      </div>
     </form>
+    <!--Building list-->
+    <section class="companies">
+      <h2>Lista cladiri</h2>
+      <div class="companies__company js-companies__company">
+        <ul class="companies__company__details">
+          <li><span>Cladire: </span>Complex A</li>
+          <li><span>Adresa: </span>Garii 45A, Hargita</li>
+          <li><span>Tip: </span>Complex sportiv</li>
+          <li><span>Suprafata: </span>3000 mp</li>
+          <li><span>Persona contact:</span>Robert Rena</li>
+          <li><span>Tel: </span>455 955 423</li>
+          <li><span>E-mail: </span>robert@mielina.fit</li>
+        </ul>
+        <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
+        <div class="companies__company__actions js-companies__company__actions">
+          <div class="companies__company__actions--modifiers">
+            <a href="/pages/add-room.html">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Vezi cladire
+              </button>
+            </a>
+            <button
+              class="companies__company__btn companies__company__btn--blue"
+            >
+              Modifica
+            </button>
+          </div>
+          <div class="companies__company__actions--danger-zone">
+            <button
+              class="companies__company__btn companies__company__btn--red"
+            >
+              Sterge cladirea
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--company 2-->
+      <div class="companies__company js-companies__company">
+        <ul class="companies__company__details">
+          <li><span>Cladire: </span>Complex B</li>
+          <li><span>Adresa: </span>Sadoveanu 1, Hargita</li>
+          <li><span>Tip: </span>Complex sportiv</li>
+          <li><span>Suprafata: </span>2357 mp</li>
+          <li><span>Persona contact:</span>Jean Kalin</li>
+          <li><span>Tel: </span>425 341 975</li>
+          <li><span>E-mail: </span>jean@mielina.fit</li>
+        </ul>
+        <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
+        <div class="companies__company__actions js-companies__company__actions">
+          <div class="companies__company__actions--modifiers">
+            <button
+              class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
+            >
+              Vezi cladire
+            </button>
+            <button
+              class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
+            >
+              Modifica
+            </button>
+          </div>
+          <div class="companies__company__actions--danger-zone">
+            <button
+              class="companies__company__btn companies__company__btn--red js-btn-company-modifiers"
+            >
+              Sterge acladirea
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

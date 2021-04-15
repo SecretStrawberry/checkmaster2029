@@ -38,3 +38,17 @@
     }
   }
 }
+
+.sub-menu {
+  background-color: $color-tertiary;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  @include borderRadius;
+  &:hover {
+    transform: translateY(-2px);
+    @include shadowLight;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}

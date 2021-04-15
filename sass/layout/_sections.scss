@@ -43,6 +43,18 @@
     height: 50%;
     width: 90%;
     margin: 1rem auto;
+    a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-primary;
+      }
+
+      &:hover {
+        color: $color-secondary;
+        transition: all 0.2s;
+      }
+    }
     &__heading {
       align-self: center;
     }

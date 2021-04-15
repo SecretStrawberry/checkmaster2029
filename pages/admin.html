@@ -13,11 +13,11 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/JS/admin.js"></script>
-    <title>Admin</title>
+    <title>Admin | Lista companii</title>
   </head>
   <body>
     <header class="header header__poi">
-      <h1 class="header__poi__heading">Admin</h1>
+      <h1 class="header__poi__heading">Admin | Companii</h1>
       <div class="header__info">
         <p>Oferit de C&H Comapny</p>
         <p>Contact: 744 234 345</p>
@@ -114,10 +114,11 @@
           />
         </div>
       </div>
-
-      <button type="submit" class="new-company__form-btn">
-        Adauga companie
-      </button>
+      <div class="new-company__btn-container">
+        <button type="submit" class="new-company__form-btn">
+          Adauga companie
+        </button>
+      </div>
     </form>
     <!--WE NEED TO HIDE THIS FORM TILL "Adauga companie" IS PRESSED-->
 
@@ -135,18 +136,18 @@
         <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
         <div class="companies__company__actions js-companies__company__actions">
           <div class="companies__company__actions--modifiers">
+            <a href="/pages/add-poi.html">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Vezi comapnie
+              </button>
+            </a>
             <button
               class="companies__company__btn companies__company__btn--blue"
             >
               Modifica
             </button>
-            <a href="/pages/add-poi.html">
-              <button
-                class="companies__company__btn companies__company__btn--blue"
-              >
-                Adauga cladire
-              </button>
-            </a>
           </div>
           <div class="companies__company__actions--danger-zone">
             <button
@@ -172,12 +173,12 @@
             <button
               class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
             >
-              Modifica
+              Vezi companie
             </button>
             <button
               class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
             >
-              Adauga camere
+              Modifica
             </button>
           </div>
           <div class="companies__company__actions--danger-zone">

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/JS/admin.js"></script>
+    <title>Admin | Lista Echipamente</title>
+  </head>
+  <body>
+    <header class="header header__poi">
+      <div class="header__poi--company-container">
+        <h2>Wellness & fitness</h2>
+        <h1 class="header__poi__heading">
+          <a href="/pages/add-room.html">Complex A</a> |
+          <a href="/pages/add-equipments.html">Camera: Pompe incediu</a> |
+          Echipamnet: Pompa incediu 1
+        </h1>
+        <nav class="mini-nav">
+          <a class="sub-menu" href="/pages/admin.html">Companii</a>
+          <a class="sub-menu" href="/pages/add-poi.html">Cladiri</a>
+        </nav>
+        <!-- this h2 under, should be added programaticly from DB-->
+      </div>
+
+      <div class="header__info">
+        <p>Oferit de C&H Comapny</p>
+        <p>Contact: 744 234 345</p>
+        <p>Email: info@c&h.com</p>
+      </div>
+    </header>
+    <nav class="navigation-admin">
+      <ul>
+        <li>
+          <button class="navigation-admin__btn js-button-add-company">
+            Adauga parametru
+          </button>
+        </li>
+        <li>
+          <input
+            type="text"
+            class="navigation-admin__search-bar"
+            placeholder="Cauta parametru"
+          />
+          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
+          <button type="submit" class="navigation-admin__search-button">
+            Cauta
+          </button>
+          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
+        </li>
+      </ul>
+    </nav>
+
+    <!--the form-->
+    <form action="submit" class="new-company hidden js-new-company">
+      <h2>Adauga parametrii</h2>
+      <div class="parameters__container">
+        <div class="parameter">
+          <label for="parameter">Denumire parametru</label>
+          <input
+            type="text"
+            name="parameter"
+            class="parameter-name"
+            id="parameter-name"
+          />
+        </div>
+        <h4>Tip verificare</h4>
+        <div class="parameter-type">
+          <div class="parameter-type__field-container">
+            <label for="boolean-yes-no">Boolean DA/NU</label>
+            <input
+              type="checkbox"
+              name="boolean-yes-no"
+              class="parameter-name"
+              id="boolean-yes-no"
+            />
+          </div>
+
+          <div class="parameter-type__field-container">
+            <label for="text">Introducere date</label>
+            <input
+              type="checkbox"
+              name="text"
+              class="parameter-name"
+              id="text"
+            />
+          </div>
+
+          <div class="parameter-type__checked">
+            <label for="check">Verificat</label>
+            <input
+              type="checkbox"
+              name="check"
+              class="parameter-name"
+              id="check"
+            />
+          </div>
+        </div>
+        <div class="parameters__btn-container">
+          <button type="submit">Adauga parametru</button>
+        </div>
+      </div>
+    </form>
+
+    <section class="companies">
+      <h2>Lista parametri</h2>
+      <div class="companies__company js-companies__company">
+        <!--PARAMETER ITEM-->
+        <div class="parameter-container">
+          <ul class="parameter-list">
+            <li><span>Presiune tur </span></li>
+            <li>Tip text / introduce valoare in bari</li>
+            <input type="text" />
+          </ul>
+          <!--PARAMETER ACTION BUTTONS-->
+          <div
+            class="companies__company__actions js-companies__company__actions"
+          >
+            <div class="companies__company__actions--modifiers">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Modifica
+              </button>
+            </div>
+            <div class="companies__company__actions--danger-zone">
+              <button
+                class="companies__company__btn companies__company__btn--red"
+              >
+                Sterge parametru
+              </button>
+            </div>
+          </div>
+          <!--PARAMETER ACTION BUTTONS-->
+        </div>
+        <!--PARAMETER ITEM-->
+        <div class="parameter-container">
+          <ul class="parameter-list">
+            <li><span>Presiune retur </span></li>
+            <li>Tip text / introduce valoare in bari</li>
+            <input type="text" />
+          </ul>
+          <!--PARAMETER ACTION BUTTONS-->
+          <div
+            class="companies__company__actions js-companies__company__actions"
+          >
+            <div class="companies__company__actions--modifiers">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Modifica
+              </button>
+            </div>
+            <div class="companies__company__actions--danger-zone">
+              <button
+                class="companies__company__btn companies__company__btn--red"
+              >
+                Sterge parametru
+              </button>
+            </div>
+          </div>
+          <!--PARAMETER ACTION BUTTONS-->
+        </div>
+        <!--PARAMETER ITEM-->
+        <div class="parameter-container">
+          <ul class="parameter-list">
+            <li><span>Conditie estetica </span></li>
+            <li>Tip alege / Buna / Rea</li>
+            <div class="parameter__checkbox">
+              <div class="parameter__checkbox-tick">
+                <input
+                  type="checkbox"
+                  name="condition"
+                  class="parameter__tickbox"
+                  id="condition__good"
+                  required
+                />
+                <label for="condition__good">Buna</label>
+              </div>
+              <div class="parameter__checkbox-tick">
+                <input
+                  type="checkbox"
+                  name="condition"
+                  class="parameter__tickbox"
+                  id="condition__bad"
+                  required
+                />
+                <label for="condition__bad">Rea</label>
+              </div>
+            </div>
+          </ul>
+          <!--PARAMETER ACTION BUTTONS-->
+          <div
+            class="companies__company__actions js-companies__company__actions"
+          >
+            <div class="companies__company__actions--modifiers">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Modifica
+              </button>
+            </div>
+            <div class="companies__company__actions--danger-zone">
+              <button
+                class="companies__company__btn companies__company__btn--red"
+              >
+                Sterge parametru
+              </button>
+            </div>
+          </div>
+          <!--PARAMETER ACTION BUTTONS-->
+        </div>
+        <!--PARAMETER ITEM-->
+        <div class="parameter-container">
+          <ul class="parameter-list">
+            <li><span>Nivel galagie</span></li>
+            <li>Tip alege / Buna / Rea</li>
+            <div class="parameter__checkbox">
+              <div class="parameter__checkbox-tick">
+                <input
+                  type="checkbox"
+                  name="condition"
+                  class="parameter__tickbox"
+                  id="condition__good"
+                  required
+                />
+                <label for="condition__good">Buna</label>
+              </div>
+              <div class="parameter__checkbox-tick">
+                <input
+                  type="checkbox"
+                  name="condition"
+                  class="parameter__tickbox"
+                  id="condition__bad"
+                  required
+                />
+                <label for="condition__bad">Rea</label>
+              </div>
+            </div>
+          </ul>
+          <!--PARAMETER ACTION BUTTONS-->
+          <div
+            class="companies__company__actions js-companies__company__actions"
+          >
+            <div class="companies__company__actions--modifiers">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Modifica
+              </button>
+            </div>
+            <div class="companies__company__actions--danger-zone">
+              <button
+                class="companies__company__btn companies__company__btn--red"
+              >
+                Sterge parametru
+              </button>
+            </div>
+          </div>
+          <!--PARAMETER ACTION BUTTONS-->
+        </div>
+        <!--PARAMETER ITEM-->
+        <div class="parameter-container">
+          <ul class="parameter-list">
+            <li>
+              <span>Am verificat imprejurul pompei nu sunt obstacole </span>
+            </li>
+            <li>Tip bifa</li>
+            <div class="parameter__checkbox">
+              <div class="parameter__checkbox-tick">
+                <input
+                  type="checkbox"
+                  name="condition"
+                  class="parameter__tickbox"
+                  id="condition__good"
+                  required
+                />
+                <label for="condition__good">Verificat</label>
+              </div>
+            </div>
+          </ul>
+          <!--PARAMETER ACTION BUTTONS-->
+          <div
+            class="companies__company__actions js-companies__company__actions"
+          >
+            <div class="companies__company__actions--modifiers">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Modifica
+              </button>
+            </div>
+            <div class="companies__company__actions--danger-zone">
+              <button
+                class="companies__company__btn companies__company__btn--red"
+              >
+                Sterge parametru
+              </button>
+            </div>
+          </div>
+          <!--PARAMETER ACTION BUTTONS-->
+        </div>
+        <!--PARAMETER ITEM-->
+      </div>
+    </section>
+
+    <!-- <section class="equipments">
+      <div class="equipments__item">
+        <div class="equipments__item__name"><h2>Pompa Incediu nr. 1</h2></div>
+        <div class="equipments__item__description">
+          <p>Pompa primara de incediu pt sugere apa din conducta pricipala</p>
+        </div>
+
+        <div class="equipments__item__parameters">
+          <h1 class="parameters__heading">Parametri</h1>
+          <div class="equipments__item__parameters__container">
+            <div class="parameter">
+              <p>Presiune tur</p>
+              <div class="parameter__um">
+                <input
+                  type="text"
+                  name="presure"
+                  class="parameter__input"
+                  id="presure-firepomp-1"
+                  required
+                />
+                <label for="presure-firepomp-1">Bari</label>
+              </div>
+            </div>
+            <div class="parameter">
+              <p>Presiune retur</p>
+              <div class="parameter__um">
+                <input
+                  type="text"
+                  name="presure"
+                  class="parameter__input"
+                  id="presure-firepomp-2"
+                  required
+                />
+                <label for="presure-firepomp-2">Bari</label>
+              </div>
+            </div>
+
+            <div class="parameter">
+              <p>Conditie estetica</p>
+              <div class="parameter__checkbox">
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__good"
+                    required
+                  />
+                  <label for="condition__good">Buna</label>
+                </div>
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__bad"
+                    required
+                  />
+                  <label for="condition__bad">Rea</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="parameter parameter--aesthetics">
+              <p>Nivel galagie</p>
+              <div class="parameter__checkbox">
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__good"
+                    required
+                  />
+                  <label for="condition__good">Buna</label>
+                </div>
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__bad"
+                    required
+                  />
+                  <label for="condition__bad">Rea</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="parameter parameter--check-only">
+              <p>Am verificat imprejurul pompei nu sunt obstacole</p>
+              <div class="parameter__checkbox">
+                <div class="parameter__checkbox-tick">
+                  <input
+                    type="checkbox"
+                    name="condition"
+                    class="parameter__tickbox"
+                    id="condition__good"
+                    required
+                  />
+                  <label for="condition__good">Verificat</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+    </section>
+  </body>
+</html> -->
+  </body>
+</html>

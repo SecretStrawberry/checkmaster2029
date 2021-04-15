@@ -68,6 +68,11 @@
     &:hover {
       background-color: $color-primary;
       transform: translateY(-2px);
+      @include shadowLight;
+    }
+
+    &:active {
+      transform: translateY(1px);
     }
   }
 }
@@ -90,21 +95,24 @@
 
     transition: all 0.2s;
 
+    &:hover {
+      transform: translateY(-2px);
+      background-color: $color-primary;
+    }
+    &:active {
+      transform: translateY(1px);
+    }
+
     &--blue {
       background-color: $color-secondary;
       color: $color-quaternary;
-      &:hover {
-        transform: translateY(-2px);
-        background-color: $color-primary;
-      }
     }
 
     &--red {
       background-color: $color-red;
       color: $color-primary;
       &:hover {
-        transform: scale(1.3);
-        border: 1px solid $color-tertiary;
+        color: $color-red;
       }
     }
   }
