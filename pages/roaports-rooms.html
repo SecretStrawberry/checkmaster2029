@@ -14,23 +14,18 @@
     <link rel="stylesheet" href="/css/ionicons.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/JS/admin.js"></script>
-    <title>Admin | Lista Parametri</title>
+    <title>Rapoarte | Camere</title>
   </head>
   <body>
     <header class="header header__poi">
       <div class="header__poi--company-container">
         <h2>Wellness & fitness</h2>
-        <h1 class="header__poi__heading">
-          <a href="/pages/add-room.html">Complex A</a> | Camera: Pompe incediu
-        </h1>
+        <h1 class="header__poi__heading">Rapoarte | Complex A | Camere</h1>
         <nav class="mini-nav">
           <a class="sub-menu" href="/pages/admin.html">Companii</a>
-          <a class="sub-menu" href="/pages/add-poi.html">Cladiri</a>
-          <a class="sub-menu" href="">Rapoarte</a>
+          <a class="sub-menu" href="/pages/raports.html">Raportare Cladiri</a>
         </nav>
-        <!-- this h2 under, should be added programaticly from DB-->
       </div>
-
       <div class="header__info">
         <p>Oferit de C&H Comapny</p>
         <p>Contact: 744 234 345</p>
@@ -40,101 +35,55 @@
     <nav class="navigation-admin">
       <ul>
         <li>
-          <button class="navigation-admin__btn js-button-add-company">
-            Adauga echipament
-          </button>
-        </li>
-        <li>
           <input
             type="text"
             class="navigation-admin__search-bar"
-            placeholder="Cauta echipamente"
+            placeholder="Cauta camera"
           />
           <i class="ion-ios-search navigation-admin__icon"></i>
         </li>
       </ul>
     </nav>
-
-    <form action="submit" class="new-company hidden js-new-company">
-      <h2>Adauga echipament</h2>
-      <div class="group__name">
-        <label for="equipment">Nume echipament</label>
-        <input
-          type="text"
-          name="group"
-          class="equipment-name"
-          id="equipment-name"
-          required
-        />
-      </div>
-
-      <div class="parameters__btn-container">
-        <button type="submit" class="new-company__form-btn">
-          Adauga echipamnet
-        </button>
-      </div>
-    </form>
-
-    <!--gruops list-->
     <section class="companies">
-      <h2>Lista echipamente</h2>
+      <h2>Rapoarte | Lista camere</h2>
       <div class="companies__company js-companies__company">
         <ul class="companies__company__details">
-          <li><span>Echipamnet: </span>Pompa incediu 1</li>
+          <li><span>Camera: </span>Pompe Incediu</li>
         </ul>
         <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
         <div class="companies__company__actions js-companies__company__actions">
           <div class="companies__company__actions--modifiers">
-            <a href="/pages/add-parameters.html">
+            <a href="/pages/raports-equipments.html">
               <button
                 class="companies__company__btn companies__company__btn--blue"
               >
-                Vezi parametrii
+                Rapoarte camera
               </button>
             </a>
-            <button
-              class="companies__company__btn companies__company__btn--blue"
-            >
-              Modifica
-            </button>
           </div>
-          <div class="companies__company__actions--danger-zone">
-            <button
-              class="companies__company__btn companies__company__btn--red"
-            >
-              Sterge echipament
-            </button>
-          </div>
+          <div class="companies__company__actions--danger-zone"></div>
         </div>
       </div>
-      <!--equipment 2-->
+      <!--room 2-->
       <div class="companies__company js-companies__company">
         <ul class="companies__company__details">
-          <li><span>Echipamnet: </span>Pompa incediu 2</li>
+          <li>
+            <span>Camera: </span>Panou electric tablou pricipal intrare
+            pricipala
+          </li>
         </ul>
         <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
         <div class="companies__company__actions js-companies__company__actions">
           <div class="companies__company__actions--modifiers">
-            <a href="/pages/add-parameters.html">
+            <a href="#">
               <button
                 class="companies__company__btn companies__company__btn--blue"
               >
-                Vezi parametrii
+                Rapoarte camera
               </button>
             </a>
-            <button
-              class="companies__company__btn companies__company__btn--blue"
-            >
-              Modifica
-            </button>
           </div>
-          <div class="companies__company__actions--danger-zone">
-            <button
-              class="companies__company__btn companies__company__btn--red"
-            >
-              Sterge echipament
-            </button>
-          </div>
+          <div class="companies__company__actions--danger-zone"></div>
         </div>
       </div>
     </section>

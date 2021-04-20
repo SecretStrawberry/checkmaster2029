@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="/css/ionicons.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/JS/admin.js"></script>
     <title>Admin | Lista Camere</title>
@@ -19,11 +20,12 @@
     <header class="header header__poi">
       <div class="header__poi--company-container">
         <h2>Wellness & fitness</h2>
-        <h1 class="header__poi__heading">Complex A</h1>
+        <h1 class="header__poi__heading">Complex A | Camere</h1>
         <!-- this h2 under, should be added programaticly from DB-->
         <nav class="mini-nav">
           <a class="sub-menu" href="/pages/admin.html">Companii</a>
           <a class="sub-menu" href="/pages/add-poi.html">Cladiri</a>
+          <a class="sub-menu" href="/pages/roaports-rooms.html">Rapoarte</a>
         </nav>
       </div>
 
@@ -46,11 +48,7 @@
             class="navigation-admin__search-bar"
             placeholder="Cauta camera"
           />
-          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
-          <button type="submit" class="navigation-admin__search-button">
-            Cauta
-          </button>
-          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
+          <i class="ion-ios-search navigation-admin__icon"></i>
         </li>
       </ul>
     </nav>
@@ -120,7 +118,7 @@
         <!--BUTTONS WILL APPEAR ONLYO ON HOVER OR CLICK-->
         <div class="companies__company__actions js-companies__company__actions">
           <div class="companies__company__actions--modifiers">
-            <a href="/pages/add-equipments.html">
+            <a href="#">
               <button
                 class="companies__company__btn companies__company__btn--blue"
               >

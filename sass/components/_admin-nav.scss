@@ -17,6 +17,17 @@
     list-style: none;
 
     padding: 1rem 2rem;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__icon {
+    position: relative;
+    font-size: 4rem;
+    color: $color-tertiary;
+    right: 10%;
   }
 }
 

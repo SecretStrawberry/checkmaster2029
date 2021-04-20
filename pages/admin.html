@@ -10,7 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="/css/ionicons.css" />
+    <link rel="stylesheet" href="/css/ionicons.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <script defer src="/JS/admin.js"></script>
     <title>Admin | Lista companii</title>
@@ -37,11 +38,7 @@
             class="navigation-admin__search-bar"
             placeholder="Cauta companie"
           />
-          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
-          <button type="submit" class="navigation-admin__search-button">
-            Cauta
-          </button>
-          <!--REPLACE THE WORD "cauta" FROM BUTTON WITH AN MAGNIFIER ICON-->
+          <i class="ion-ios-search navigation-admin__icon"></i>
         </li>
       </ul>
     </nav>
@@ -143,6 +140,13 @@
                 Vezi comapnie
               </button>
             </a>
+            <a href="/pages/raports.html">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Rapoarte
+              </button>
+            </a>
             <button
               class="companies__company__btn companies__company__btn--blue"
             >
@@ -175,6 +179,13 @@
             >
               Vezi companie
             </button>
+            <a href="#">
+              <button
+                class="companies__company__btn companies__company__btn--blue"
+              >
+                Rapoarte
+              </button>
+            </a>
             <button
               class="companies__company__btn companies__company__btn--blue js-btn-company-modifiers"
             >
@@ -191,5 +202,6 @@
         </div>
       </div>
     </section>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>
